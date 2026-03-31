@@ -77,7 +77,7 @@ function RecycleBin({ refreshTrigger, onRestored }) {
         </span>
       </div>
 
-      {/* Legend */}
+      {/* Days Old */}
       <div className="flex gap-6 mb-4">
         <span className="flex items-center gap-2 text-xs text-gray-400">
           <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
@@ -101,7 +101,7 @@ function RecycleBin({ refreshTrigger, onRestored }) {
           <span className="text-white text-sm font-semibold">
             Deleted Products
           </span>
-          <span className="text-xs font-mono text-gray-400 bg-[#13131e] border border-[#25253a] px-3 py-1 rounded-full">
+          <span className="text-xs font-mono text-gray-400 bg-[#13131e] border border-[#25253a] px-3 py-1 rounded-full hover:text-white">
             {deletedProducts.length} items
           </span>
         </div>
@@ -184,7 +184,7 @@ function RecycleBin({ refreshTrigger, onRestored }) {
                         {isBlocked ? (
                           <button
                             disabled
-                            className="text-xs px-3 py-1.5 rounded-lg border border-[#25253a] text-gray-500 cursor-not-allowed opacity-50"
+                            className="text-xs px-3 py-1.5 rounded-lg border border-[#25253a] text-white cursor-not-allowed opacity-50"
                           >
                             Blocked
                           </button>

@@ -22,7 +22,7 @@ function App() {
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-xs font-mono text-gray-400 bg-[#0d0d14] border border-[#25253a] px-3 py-1 rounded-full">
+            <span className="text-xs font-mono text-gray-400 bg-[#0d0d14] border border-[#25253a] px-3 py-1 rounded-full hover:text-white">
               React + Express + MySQL
             </span>
           </div>

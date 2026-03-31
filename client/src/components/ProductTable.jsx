@@ -182,14 +182,14 @@ function ProductTable({ refreshTrigger, onProductChanged }) {
           <span className="text-white text-sm font-semibold">
             Active Products
           </span>
-          <span className="text-xs font-mono text-gray-400 bg-[#13131e] border border-[#25253a] px-3 py-1 rounded-full">
+          <span className="text-xs font-mono text-gray-400 bg-[#13131e] border border-[#25253a] px-3 py-1 rounded-full hover:text-white">
             {filteredProducts.length} products
           </span>
         </div>
 
         {/* Loading */}
         {loading && (
-          <div className="text-center text-gray-400 text-sm py-10">
+          <div className="text-center text-white text-sm py-10">
             Loading products...
           </div>
         )}
@@ -205,7 +205,7 @@ function ProductTable({ refreshTrigger, onProductChanged }) {
         {!loading && !error && filteredProducts.length === 0 && (
           <div className="text-center py-10">
             <div className="text-3xl mb-2">📦</div>
-            <p className="text-gray-400 text-sm">No products found</p>
+            <p className="text-white text-sm">No products found</p>
           </div>
         )}
 
@@ -215,7 +215,7 @@ function ProductTable({ refreshTrigger, onProductChanged }) {
             <table className="w-full text-sm">
               <thead>
                 <tr className="bg-[#13131e]">
-                  <th className="text-left text-xs text-gray-400 uppercase tracking-wider px-4 py-3">
+                  <th className="text-left text-xs text-gray-400 uppercase tracking-wider px-4 py-3 hover:text-white">
                     ID
                   </th>
                   <th
@@ -242,10 +242,10 @@ function ProductTable({ refreshTrigger, onProductChanged }) {
                   >
                     Stock {getSortIcon('stock')}
                   </th>
-                  <th className="text-left text-xs text-gray-400 uppercase tracking-wider px-4 py-3">
+                  <th className="text-left text-xs text-gray-400 uppercase tracking-wider px-4 py-3 hover:text-white">
                     Status
                   </th>
-                  <th className="text-left text-xs text-gray-400 uppercase tracking-wider px-4 py-3">
+                  <th className="text-left text-xs text-gray-400 uppercase tracking-wider px-4 py-3 hover:text-white">
                     Actions
                   </th>
                 </tr>
@@ -256,13 +256,13 @@ function ProductTable({ refreshTrigger, onProductChanged }) {
                     key={product.id}
                     className="border-t border-[#25253a] hover:bg-[#1a1a2e] transition-colors"
                   >
-                    <td className="px-4 py-3 font-mono text-xs text-gray-400">
-                      #{String(product.id).padStart(3, '0')}
+                    <td className="px-4 py-3 font-mono text-xs text-white">
+                      {String(product.id).padStart(3, '0')}
                     </td>
                     <td className="px-4 py-3 text-white font-semibold">
                       {product.name}
                     </td>
-                    <td className="px-4 py-3 text-gray-400 text-xs">
+                    <td className="px-4 py-3 text-white text-xs">
                       {product.category}
                     </td>
                     <td className="px-4 py-3 text-white">
