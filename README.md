@@ -32,7 +32,7 @@ product-management/
 │
 ├── server/                        # Express.js backend
 │   ├── routes/
-│   │   └── products.js            # All API endpoints
+│   │   └── products.js            # Task 2 - All API endpoints
 │   ├── db.js                      # MySQL connection pool
 │   ├── index.js                   # Express app entry point
 │   └── .env                       # Environment variables
