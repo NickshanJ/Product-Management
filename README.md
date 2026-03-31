@@ -280,7 +280,7 @@ END;
 | ORM/Driver | mysql2 |
 
 -- ============================================                                                                                                  
--- Product Management System — Migration File
+-- Product Management System — Migration File                                                                                                    
 -- ============================================
 
 -- Step 1: Create the database
@@ -320,7 +320,7 @@ END //
 DELIMITER ;
 
 -- ============================================                                                                                                 
--- Product Management System — Seed Data
+-- Product Management System — Seed Data                                                                                                         
 -- ============================================
 
 USE product_db;
